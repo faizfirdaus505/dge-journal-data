@@ -1,8 +1,35 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-02T13:47:11.342Z",
-  "trades": [],
+  "updatedAt": "2026-10-02T13:51:05.373Z",
+  "trades": [
+    {
+      "id": "mur0txaphmyrn9",
+      "createdAt": 1790949063121,
+      "updatedAt": 1790949063121,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Short",
+      "status": "Open",
+      "setup": "Fakeout",
+      "timeframe": "5m",
+      "entry": "9.83",
+      "exit": "",
+      "qty": "0.0011",
+      "leverage": "10",
+      "stop": "85584.1",
+      "target": "1.14",
+      "fees": "0",
+      "manualPnl": "0.26",
+      "risk": "0.64",
+      "date": "2026-10-02",
+      "rules": "Yes",
+      "emotion": "Fear",
+      "notes": "",
+      "image": ""
+    }
+  ],
   "reviews": [],
   "accountSettings": {
     "idrBalance": 85102,
