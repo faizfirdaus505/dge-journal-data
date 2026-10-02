@@ -3,7 +3,7 @@ const $ = (id) => document.getElementById(id);
 const STORAGE_KEY = 'edgeJournal.trades.v1';
 const REVIEW_KEY = 'edgeJournal.reviews.v1';
 const GITHUB_CONFIG_KEY = 'edgeJournal.githubConfig.v1';
-const GITHUB_DEFAULTS = Object.freeze({ owner: 'faizfirdaus505', repo: 'porto2', dataRepo: 'edge-journal-data', branch: 'main', pagesUrl: 'https://faizfirdaus505.github.io/porto2/' });
+const GITHUB_DEFAULTS = Object.freeze({ owner: 'faizfirdaus505', repo: 'dge-journal-data', dataRepo: 'dge-journal-data', branch: 'main', pagesUrl: 'https://faizfirdaus505.github.io/dge-journal-data/' });
 const ACCOUNT_KEY = 'edgeJournal.accountSettings.v1';
 const GITHUB_DATA_PATH = '.edge-journal/journal.json';
 let githubSyncTimer = null;
