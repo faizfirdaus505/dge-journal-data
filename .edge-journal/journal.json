@@ -1,14 +1,14 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-02T13:43:50.028Z",
+  "updatedAt": "2026-10-02T13:45:02.589Z",
   "trades": [],
   "reviews": [],
   "accountSettings": {
-    "idrBalance": 0,
+    "idrBalance": 85.102,
     "usdtBalance": 21.86,
-    "usdtIdrRate": 16000,
-    "updatedAt": 1790948627788
+    "usdtIdrRate": 17942.98,
+    "updatedAt": 1790948700454
   },
   "deletedRecords": []
 }
