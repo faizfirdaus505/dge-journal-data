@@ -55,11 +55,11 @@ $('ghRepo').value=c.repo;
 $('ghDataRepo').value=c.dataRepo||'edge-journal-data';
 $('ghBranch').value=c.branch;
 $('ghPagesUrl').value=c.pagesUrl||'';
-if(c.token&&c.owner&&c.repo){setGitHubStatus(`Situs ${c.owner}/${c.repo} · data privat ${c.dataRepo||'edge-journal-data'} · branch ${c.branch||'main'}.`, 'connected')}else setGitHubStatus('Belum terhubung. Isi token dan detail repository untuk mulai.');
+if(c.token&&c.owner&&c.repo){setGitHubStatus(`Situs ${c.owner}/${c.repo} · data ${c.dataRepo||'edge-journal-data'} · branch ${c.branch||'main'}.`, 'connected')}else setGitHubStatus('Belum terhubung. Isi token dan detail repository untuk mulai.');
 }
 function readGitHubForm(){return {token:$('ghToken').value.trim(),owner:$('ghOwner').value.trim(),repo:$('ghRepo').value.trim(),dataRepo:$('ghDataRepo').value.trim(),branch:$('ghBranch').value.trim()||'main',pagesUrl:$('ghPagesUrl').value.trim()};
 }
-function validateGitHubConfig(c){if(!c.token||!c.owner||!c.repo||!c.dataRepo||!c.branch){throw new Error('Token, username, repository situs, repository data privat, dan branch wajib diisi.');
+function validateGitHubConfig(c){if(!c.token||!c.owner||!c.repo||!c.dataRepo||!c.branch){throw new Error('Token, username, repository situs, repository data, dan branch wajib diisi.');
 }if(!/^[a-zA-Z0-9-]+$/.test(c.owner)||! /^[a-zA-Z0-9._-]+$/.test(c.repo)||! /^[a-zA-Z0-9._-]+$/.test(c.dataRepo)){throw new Error('Format username atau nama repository tidak valid.');
 }}
 async function githubApi(path, cfg=getGitHubConfig(), options={}){if(!cfg?.token)throw new Error('Token GitHub belum diisi.');
@@ -72,11 +72,10 @@ throw err;
 }return data;
 }
 async function testGitHubConnection(cfg=readGitHubForm()){validateGitHubConfig(cfg);
-setGitHubStatus('Memeriksa token dan repository data privat…','loading');
+setGitHubStatus('Memeriksa token dan repository data…','loading');
 const repo=await githubApi(`/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.dataRepo)}`,cfg);
-if(!repo.private)throw new Error(`Repository data “${cfg.dataRepo}” masih PUBLIK. Buat repository privat terpisah untuk melindungi jurnal trading.`);
 if(repo.default_branch!==cfg.branch){try{await githubApi(`/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.dataRepo)}/branches/${encodeURIComponent(cfg.branch)}`,cfg)}catch{throw new Error(`Branch “${cfg.branch}” tidak ditemukan pada repository data. Branch default-nya “${repo.default_branch}”.`);
-}}setGitHubStatus(`Terhubung · penyimpanan privat ${repo.full_name} · branch ${cfg.branch}.`,'connected');
+}}setGitHubStatus(`Terhubung · penyimpanan ${repo.private?'privat':'publik'} ${repo.full_name} · branch ${cfg.branch}.`,'connected');
 return {repo};
 }
 function scheduleGitHubSync(){if(githubSyncPaused||!getGitHubConfig()?.token||!getGitHubConfig()?.dataRepo)return;
