@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#0b0e11" name="theme-color"/>
+  <title>
+   Edge Journal &mdash; Jurnal Trading Kripto
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet">
+  </link>
+ </head>
+ <body>
+  <div class="app-shell">
+   <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#dashboard">
+     <span class="brand-mark">
+      E
+     </span>
+     <span>
+      <b>
+       EDGE
+      </b>
+      <small>
+       CRYPTO JOURNAL
+      </small>
+     </span>
+    </a>
+    <div class="side-label">
+     RUANG KERJA
+    </div>
+    <nav aria-label="Main navigation" class="nav-list">
+     <button class="nav-item active" data-view="dashboard">
+      <span>
+       ▦
+      </span>
+      Ringkasan
+     </button>
+     <button class="nav-item" data-view="trades">
+      <span>
+       &nearrow;
+      </span>
+      Jurnal transaksi
+      <i id="tradeCountBadge">
+       0
+      </i>
+     </button>
+     <button class="nav-item" data-view="market">
+      <span>
+       ₿
+      </span>
+      Pasar kripto
+     </button>
+     <button class="nav-item" data-view="analytics">
+      <span>
+       ⌁
+      </span>
+      Analisis
+     </button>
+     <button class="nav-item" data-view="reviews">
+      <span>
+       ◷
+      </span>
+      Evaluasi harian
+     </button>
+     <button class="nav-item" data-view="risk">
+      <span>
+       ◎
+      </span>
+      Kalkulator risiko
+     </button>
+    </nav>
+    <div class="sidebar-bottom">
+     <div class="side-label">
+      PANEL PENGEMBANG
+      <span class="live-dot">
+      </span>
+     </div>
+     <div class="dev-card">
+      <div class="dev-card-head">
+       <span class="status-dot" id="storageDot">
+       </span>
+       <b id="storageStatus">
+        Local storage
+       </b>
+      </div>
+      <p id="syncText">
+       Jurnal tersimpan di perangkat ini sampai sinkronisasi GitHub aktif.
+      </p>
+      <div class="dev-actions">
+       <button id="exportBtn">
+        ⇩ Ekspor
+       </button>
+       <button id="importBtn">
+        ⇧ Impor
+       </button>
+      </div>
+      <button class="github-button" id="githubBtn">
+       ⚙ Pengaturan GitHub
+       <span>
+        &nearrow;
+       </span>
+      </button>
+      <button class="github-button github-open-button" id="githubOpenBtn">
+       ◉ Buka Repository Situs
+       <span>
+        &nearrow;
+       </span>
+      </button>
+     </div>
+     <div class="profile">
+      <div class="avatar">
+       FF
+      </div>
+      <div>
+       <b>
+        Ruang kerja pribadi
+       </b>
+       <small>
+        Jurnal pribadi
+       </small>
+      </div>
+      <span class="profile-menu">
+       &bull;&bull;&bull;
+      </span>
+     </div>
+    </div>
+   </aside>
+   <main class="main-content">
+    <header class="topbar">
+     <button aria-label="Open menu" class="mobile-menu" id="mobileMenu">
+      ☰
+     </button>
+     <div class="breadcrumb">
+      Ruang kerja
+      <span>
+       /
+      </span>
+      <b id="crumbTitle">
+       Ringkasan
+      </b>
+     </div>
+     <div class="top-actions">
+      <span class="market-status">
+       <i>
+       </i>
+       MODE PRIBADI
+      </span>
+      <button class="icon-button" id="themeHint" title="Dark mode">
+       ◐
+      </button>
+      <button class="primary-button" id="newTradeTop">
+       ＋ Catat transaksi
+      </button>
+     </div>
+    </header>
+    <section class="view active" id="view-dashboard">
+     <div class="page-heading">
+      <div>
+       <div class="eyebrow">
+        PERFORMA TRADING ANDA
+       </div>
+       <h1>
+        Ringkasan trading
+        <span class="heading-period">
+         / SEMUA WAKTU
+        </span>
+       </h1>
+       <p>
+        Pantau saldo, hasil transaksi, risiko, dan evaluasi dalam satu tempat.
+       </p>
+      </div>
+      <div class="heading-right">
+       <span class="date-chip" id="todayDate">
+        &mdash;
+       </span>
+       <button class="outline-button" id="quickReviewBtn">
+        ＋ Evaluasi harian
+       </button>
+      </div>
+     </div>
+     <article class="panel account-panel">
+      <div class="panel-heading">
+       <div>
+        <h2>
+         Saldo akun
+        </h2>
+        <p>
+         Masukkan saldo aktual secara manual. Saldo ini bukan saldo yang dibaca langsung dari exchange.
+        </p>
+       </div>
+       <button class="outline-button" id="syncNowBtn">
+        &orarr; Sinkronkan jurnal
+       </button>
+      </div>
+      <div class="balance-grid">
+       <div class="balance-tile">
+        <span>
+         Saldo Spot &middot; IDR
+        </span>
+        <strong id="balanceIDR">
+         Rp 0
+        </strong>
+        <small>
+         Hasil transaksi Spot:
+         <b id="spotPnlBalance">
+          Rp 0
+         </b>
+        </small>
+       </div>
+       <div class="balance-tile">
+        <span>
+         Saldo Futures &middot; Tether (USDT)
+        </span>
+        <strong id="balanceUSDT">
+         0 USDT
+        </strong>
+        <small>
+         Hasil Futures:
+         <b id="futuresPnlBalance">
+          0.00 USDT
+         </b>
+        </small>
+        <small>
+         Perkiraan setara
+         <b id="balanceUSDTIDR">
+          Rp 0
+         </b>
+        </small>
+       </div>
+       <div class="balance-inputs">
+        <label>
+         Saldo Spot (Rp)
+         <input id="idrBalanceInput" min="0" step="1" type="number" value="0"/>
+        </label>
+        <label>
+         Saldo Futures (USDT)
+         <input id="usdtBalanceInput" min="0" step="any" type="number" value="0"/>
+        </label>
+        <label>
+         Kurs USDT/IDR
+         <input id="usdtRateInput" min="1" step="1" type="number" value="16000"/>
+        </label>
+        <button class="primary-button" id="saveBalancesBtn">
+         Simpan saldo
+        </button>
+       </div>
+      </div>
+     </article>
+     <div class="stat-grid">
+      <article class="stat-card">
+       <div class="stat-top">
+        <span>
+         P/L Futures terealisasi
+        </span>
+        <span class="stat-icon green">
+         &nearrow;
+        </span>
+       </div>
+       <div class="stat-value" id="statPnl">
+        $0.00
+       </div>
+       <div class="stat-foot">
+        <span id="statPnlPct">
+         0.00%
+        </span>
+        <span>
+         setelah biaya
+        </span>
+       </div>
+      </article>
+      <article class="stat-card">
+       <div class="stat-top">
+        <span>
+         Rasio menang
+        </span>
+        <span class="stat-icon blue">
+         ◎
+        </span>
+       </div>
+       <div class="stat-value" id="statWin">
+        &mdash;
+       </div>
+       <div class="stat-foot">
+        <span id="statWins">
+         0 wins / 0 losses
+        </span>
+        <span>
+         posisi selesai
+        </span>
+       </div>
+      </article>
+      <article class="stat-card">
+       <div class="stat-top">
+        <span>
+         Faktor profit
+        </span>
+        <span class="stat-icon purple">
+         ⌁
+        </span>
+       </div>
+       <div class="stat-value" id="statPF">
+        &mdash;
+       </div>
+       <div class="stat-foot">
+        <span>
+         Total untung &divide; total rugi
+        </span>
+       </div>
+      </article>
+      <article class="stat-card">
+       <div class="stat-top">
+        <span>
+         Drawdown maksimum
+        </span>
+        <span class="stat-icon orange">
+         &searrow;
+        </span>
+       </div>
+       <div class="stat-value" id="statDD">
+        0.00%
+       </div>
+       <div class="stat-foot">
+        <span>
+         Berdasarkan urutan transaksi yang dicatat
+        </span>
+       </div>
+      </article>
+     </div>
+     <div class="dashboard-grid">
+      <article class="panel equity-panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Kurva hasil Futures
+         </h2>
+         <p>
+          Saldo awal + P/L terealisasi &middot; USDT
+         </p>
+        </div>
+        <span class="pill">
+         SEMUA WAKTU
+        </span>
+       </div>
+       <div class="chart-summary">
+        <strong id="chartTotal">
+         $0.00
+        </strong>
+        <span id="chartCaption">
+         No posisi selesai yet
+        </span>
+       </div>
+       <div class="chart-wrap">
+        <svg aria-label="Equity curve chart" id="equityChart" preserveaspectratio="none" role="img" viewbox="0 0 720 220">
+         <text fill="#7d8792" text-anchor="middle" x="360" y="110">
+          Add posisi selesai to build your curve
+         </text>
+        </svg>
+       </div>
+       <div class="chart-axis">
+        <span>
+         Transaksi pertama
+        </span>
+        <span>
+         Transaksi terbaru
+        </span>
+       </div>
+      </article>
+      <article class="panel breakdown-panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Hasil Futures
+         </h2>
+         <p>
+          Distribusi posisi Futures yang selesai
+         </p>
+        </div>
+        <span class="mini-icon">
+         ◔
+        </span>
+       </div>
+       <div class="donut-wrap">
+        <div class="donut" id="outcomeDonut">
+         <div>
+          <strong id="donutTotal">
+           0
+          </strong>
+          <small>
+           TRADES
+          </small>
+         </div>
+        </div>
+       </div>
+       <div class="legend">
+        <div>
+         <span>
+          <i class="legend-dot win">
+          </i>
+          Untung
+         </span>
+         <b id="donutWins">
+          0
+         </b>
+        </div>
+        <div>
+         <span>
+          <i class="legend-dot loss">
+          </i>
+          Rugi
+         </span>
+         <b id="donutLosses">
+          0
+         </b>
+        </div>
+        <div>
+         <span>
+          <i class="legend-dot be">
+          </i>
+          Impas
+         </span>
+         <b id="donutBE">
+          0
+         </b>
+        </div>
+       </div>
+      </article>
+     </div>
+     <article class="panel spot-equity-panel">
+      <div class="panel-heading">
+       <div>
+        <h2>
+         Kurva hasil Spot
+        </h2>
+        <p>
+         Saldo awal + P/L terealisasi &middot; IDR
+        </p>
+       </div>
+       <span class="pill">
+        SPOT
+       </span>
+      </div>
+      <div class="chart-summary">
+       <strong id="spotChartTotal">
+        Rp 0
+       </strong>
+       <span id="spotChartCaption">
+        Belum ada transaksi Spot selesai
+       </span>
+      </div>
+      <div class="chart-wrap">
+       <svg aria-label="Grafik hasil Spot" id="spotEquityChart" preserveaspectratio="none" role="img" viewbox="0 0 720 220">
+       </svg>
+      </div>
+     </article>
+     <article class="panel recent-panel">
+      <div class="panel-heading">
+       <div>
+        <h2>
+         Transaksi terbaru
+        </h2>
+        <p>
+         Keputusan trading yang terakhir dicatat
+        </p>
+       </div>
+       <button class="text-button" data-goto="trades">
+        Lihat semua transaksi &nearrow;
+       </button>
+      </div>
+      <div class="table-scroll">
+       <table>
+        <thead>
+         <tr>
+          <th>
+           PAIR / STRATEGI
+          </th>
+          <th>
+           ARAH
+          </th>
+          <th>
+           STRATEGI
+          </th>
+          <th>
+           TANGGAL
+          </th>
+          <th>
+           P/L BERSIH
+          </th>
+          <th>
+           STATUS
+          </th>
+         </tr>
+        </thead>
+        <tbody id="recentTradesBody">
+        </tbody>
+       </table>
+      </div>
+      <div class="empty-state" id="recentEmpty">
+       <div class="empty-icon">
+        &nearrow;
+       </div>
+       <b>
+        Belum ada transaksi
+       </b>
+       <p>
+        Catat transaksi pertama untuk mulai mengevaluasi performa.
+       </p>
+       <button class="primary-button" id="emptyAddTrade">
+        ＋ Catat transaksi pertama
+       </button>
+      </div>
+     </article>
+     <div class="dashboard-bottom">
+      <article class="panel insight-panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Ringkasan disiplin
+         </h2>
+         <p>
+          Apakah Anda mengikuti rencana?
+         </p>
+        </div>
+        <span class="stat-icon purple">
+         ✳
+        </span>
+       </div>
+       <div class="discipline-number" id="disciplineValue">
+        &mdash;
+        <small>
+         adherence
+        </small>
+       </div>
+       <div class="progress-track">
+        <span id="disciplineBar">
+        </span>
+       </div>
+       <p id="disciplineNote">
+        Log your rule compliance in each trade to see this metric.
+       </p>
+      </article>
+      <article class="panel shortcut-panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Aksi cepat
+         </h2>
+         <p>
+          Jaga konsistensi proses
+         </p>
+        </div>
+       </div>
+       <button class="shortcut" id="shortcutTrade">
+        <span class="shortcut-icon">
+         ＋
+        </span>
+        <span>
+         <b>
+          Catat transaksi baru
+         </b>
+         <small>
+          Catat strategi, risiko, dan hasil
+         </small>
+        </span>
+        <i>
+         &rarr;
+        </i>
+       </button>
+       <button class="shortcut" id="shortcutReview">
+        <span class="shortcut-icon">
+         ◷
+        </span>
+        <span>
+         <b>
+          Tulis evaluasi harian
+         </b>
+         <small>
+          Catat pelajaran dan kondisi mental
+         </small>
+        </span>
+        <i>
+         &rarr;
+        </i>
+       </button>
+      </article>
+     </div>
+    </section>
+    <section class="view" id="view-trades">
+     <div class="page-heading">
+      <div>
+       <div class="eyebrow">
+        PENGELOLAAN TRANSAKSI
+       </div>
+       <h1>
+        Jurnal transaksi
+       </h1>
+       <p>
+        Catat posisi, strategi, hasil, dan pelajaran dari setiap transaksi.
+       </p>
+      </div>
+      <div class="heading-actions">
+       <button class="outline-button" id="journalPdfBtn">
+        ⇩ Ekspor PDF
+       </button>
+       <button class="primary-button" id="newTradePage">
+        ＋ Catat transaksi
+       </button>
+      </div>
+     </div>
+     <div class="filter-bar">
+      <label class="search-box">
+       &telrec;
+       <input id="tradeSearch" placeholder="Cari pair, strategi, catatan&hellip;"/>
+      </label>
+      <select id="filterMarket">
+       <option value="all">
+        Semua pasar
+       </option>
+       <option value="Spot">
+        Spot
+       </option>
+       <option value="Futures">
+        Futures
+       </option>
+      </select>
+      <select id="filterSide">
+       <option value="all">
+        Semua arah
+       </option>
+       <option value="Long">
+        Long
+       </option>
+       <option value="Short">
+        Short
+       </option>
+      </select>
+      <select id="filterStatus">
+       <option value="all">
+        Semua status
+       </option>
+       <option value="Closed">
+        Selesai
+       </option>
+       <option value="Open">
+        Terbuka
+       </option>
+      </select>
+      <select id="filterResult">
+       <option value="all">
+        Semua hasil
+       </option>
+       <option value="Win">
+        Untung
+       </option>
+       <option value="Loss">
+        Rugi
+       </option>
+       <option value="Breakeven">
+        Impas
+       </option>
+      </select>
+     </div>
+     <article class="panel trades-table-panel">
+      <div class="table-scroll">
+       <table>
+        <thead>
+         <tr>
+          <th>
+           PAIR / STRATEGI
+          </th>
+          <th>
+           ARAH
+          </th>
+          <th>
+           MASUK &rarr; KELUAR
+          </th>
+          <th>
+           TANGGAL
+          </th>
+          <th>
+           R MULTIPLE
+          </th>
+          <th>
+           P/L BERSIH
+          </th>
+          <th>
+           STATUS
+          </th>
+          <th>
+          </th>
+         </tr>
+        </thead>
+        <tbody id="tradesBody">
+        </tbody>
+       </table>
+      </div>
+      <div class="empty-state" id="tradesEmpty">
+       <div class="empty-icon">
+        ⌁
+       </div>
+       <b>
+        Tidak ada transaksi yang cocok
+       </b>
+       <p>
+        Ubah filter atau catat transaksi baru.
+       </p>
+       <button class="primary-button" id="emptyAddTrade2">
+        ＋ Catat transaksi
+       </button>
+      </div>
+     </article>
+     <div class="table-foot">
+      <span id="tradeFootCount">
+       0 transaksi
+      </span>
+      <span>
+       P/L mengikuti mata uang pasangan: IDR untuk Spot dan USDT untuk Futures.
+      </span>
+     </div>
+    </section>
+    <section class="view" id="view-analytics">
+     <div class="page-heading">
+      <div>
+       <div class="eyebrow">
+        TINJAUAN PERFORMA
+       </div>
+       <h1>
+        Analisis
+       </h1>
+       <p>
+        Cari pola yang dapat diulang, bukan hanya kemenangan sesaat.
+       </p>
+      </div>
+      <button class="outline-button" id="analyticsExport">
+       ⇩ Ekspor data
+      </button>
+     </div>
+     <div class="stat-grid analytics-stats">
+      <article class="stat-card">
+       <div class="stat-top">
+        <span>
+         Ekspektasi / transaksi
+        </span>
+        <span class="stat-icon green">
+         ⌁
+        </span>
+       </div>
+       <div class="stat-value" id="anaExpectancy">
+        &mdash;
+       </div>
+       <div class="stat-foot">
+        <span>
+         Rata-rata P/L bersih per transaksi selesai
+        </span>
+       </div>
+      </article>
+      <article class="stat-card">
+       <div class="stat-top">
+        <span>
+         Rata-rata keuntungan
+        </span>
+        <span class="stat-icon blue">
+         &nearrow;
+        </span>
+       </div>
+       <div class="stat-value" id="anaAvgWin">
+        &mdash;
+       </div>
+       <div class="stat-foot">
+        <span>
+         After fees
+        </span>
+       </div>
+      </article>
+      <article class="stat-card">
+       <div class="stat-top">
+        <span>
+         Rata-rata kerugian
+        </span>
+        <span class="stat-icon orange">
+         &searrow;
+        </span>
+       </div>
+       <div class="stat-value" id="anaAvgLoss">
+        &mdash;
+       </div>
+       <div class="stat-foot">
+        <span>
+         After fees
+        </span>
+       </div>
+      </article>
+      <article class="stat-card">
+       <div class="stat-top">
+        <span>
+         Rata-rata R
+        </span>
+        <span class="stat-icon purple">
+         ◎
+        </span>
+       </div>
+       <div class="stat-value" id="anaAvgR">
+        &mdash;
+       </div>
+       <div class="stat-foot">
+        <span>
+         Hasil dibanding risiko
+        </span>
+       </div>
+      </article>
+     </div>
+     <div class="analytics-grid">
+      <article class="panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Performa berdasarkan strategi
+         </h2>
+         <p>
+          P/L Futures terealisasi by strategy
+         </p>
+        </div>
+       </div>
+       <div class="setup-breakdown" id="setupBreakdown">
+       </div>
+      </article>
+      <article class="panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Long vs Short
+         </h2>
+         <p>
+          Performa posisi selesai
+         </p>
+        </div>
+       </div>
+       <div class="side-breakdown" id="sideBreakdown">
+       </div>
+      </article>
+     </div>
+     <article class="panel">
+      <div class="panel-heading">
+       <div>
+        <h2>
+         Statistik Futures
+        </h2>
+        <p>
+         Berdasarkan jurnal Futures yang tersimpan
+        </p>
+       </div>
+      </div>
+      <div class="stats-list" id="statsList">
+      </div>
+     </article>
+    </section>
+    <section class="view" id="view-reviews">
+     <div class="page-heading">
+      <div>
+       <div class="eyebrow">
+        PROCESS OVER OUTCOME
+       </div>
+       <h1>
+        Evaluasi harian
+       </h1>
+       <p>
+        Tulis evaluasi selagi detail sesi trading masih diingat.
+       </p>
+      </div>
+      <button class="primary-button" id="newReviewBtn">
+       ＋ Evaluasi baru
+      </button>
+     </div>
+     <div class="review-layout">
+      <article class="panel review-form-panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Refleksi sesi
+         </h2>
+         <p>
+          Satu evaluasi yang jujur bisa lebih berharga daripada satu transaksi tambahan.
+         </p>
+        </div>
+       </div>
+       <form class="form-grid" id="reviewForm">
+        <input id="reviewId" type="hidden"/>
+        <label>
+         Tanggal
+         <input id="reviewDate" required="" type="date"/>
+        </label>
+        <label>
+         Kondisi mental
+         <select id="reviewMood">
+          <option>
+           Focused
+          </option>
+          <option>
+           Calm
+          </option>
+          <option>
+           Anxious
+          </option>
+          <option>
+           Overconfident
+          </option>
+          <option>
+           Tired
+          </option>
+          <option>
+           Frustrated
+          </option>
+         </select>
+        </label>
+        <label>
+         Kepatuhan rencana
+         <select id="reviewAdherence">
+          <option value="Yes">
+           Followed the plan
+          </option>
+          <option value="Mostly">
+           Mostly followed
+          </option>
+          <option value="No">
+           Did not follow
+          </option>
+          <option value="No trade">
+           No trade today
+          </option>
+         </select>
+        </label>
+        <label>
+         Kesalahan utama
+         <select id="reviewMistake">
+          <option>
+           None identified
+          </option>
+          <option>
+           Early entry
+          </option>
+          <option>
+           Late exit
+          </option>
+          <option>
+           Overtrading
+          </option>
+          <option>
+           FOMO
+          </option>
+          <option>
+           Revenge trading
+          </option>
+          <option>
+           Risk violation
+          </option>
+          <option>
+           Moved stop loss
+          </option>
+          <option>
+           Other
+          </option>
+         </select>
+        </label>
+        <label class="full-field">
+         Apa yang berjalan baik?
+         <textarea id="reviewGood" placeholder="A decision or behavior worth repeating&hellip;" rows="2"></textarea>
+        </label>
+        <label class="full-field">
+         Apa yang perlu diperbaiki?
+         <textarea id="reviewImprove" placeholder="Be specific about the process, not just the outcome&hellip;" rows="2"></textarea>
+        </label>
+        <label class="full-field">
+         Pelajaran untuk sesi berikutnya
+         <textarea id="reviewLesson" placeholder="Satu tindakan praktis untuk sesi berikutnya&hellip;" rows="2"></textarea>
+        </label>
+        <label class="full-field">
+         Catatan evaluasi bebas
+         <textarea id="reviewFreeform" placeholder="Tulis apa pun: kondisi market, kesalahan, emosi, hal yang berhasil, ide strategi, target perbaikan, atau refleksi pribadi." rows="5"></textarea>
+        </label>
+        <div class="form-actions full-field">
+         <button class="primary-button" type="submit">
+          Simpan evaluasi
+         </button>
+         <button class="outline-button" id="resetReview" type="button">
+          Kosongkan formulir
+         </button>
+        </div>
+       </form>
+      </article>
+      <article class="panel review-history-panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Riwayat evaluasi
+         </h2>
+         <p>
+          Semua catatan evaluasi yang pernah disimpan
+         </p>
+        </div>
+        <span class="pill" id="reviewCount">
+         0 ENTRIES
+        </span>
+       </div>
+       <div class="review-history" id="reviewHistory">
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="view" id="view-market">
+     <div class="page-heading">
+      <div>
+       <div class="eyebrow">
+        DATA PASAR PUBLIK
+       </div>
+       <h1>
+        Pasar kripto teratas
+       </h1>
+       <p>
+        Diurutkan berdasarkan kapitalisasi pasar &middot; data publik, bukan saldo akun exchange.
+       </p>
+      </div>
+      <button class="outline-button" id="refreshMarketBtn">
+       &orarr; Segarkan pasar
+      </button>
+     </div>
+     <article class="panel market-summary">
+      <div>
+       <span class="eyebrow">
+        SUMBER DATA PASAR
+       </span>
+       <h2>
+        CoinPaprika
+       </h2>
+       <p id="marketUpdated">
+        Mengambil data terbaru&hellip;
+       </p>
+      </div>
+      <div class="market-controls">
+       <label>
+        Tampilkan
+        <select id="marketLimit">
+         <option value="10">
+          Top 10
+         </option>
+         <option value="20">
+          Top 20
+         </option>
+         <option selected="" value="50">
+          Top 50
+         </option>
+        </select>
+       </label>
+       <label>
+        Mata uang harga
+        <select id="marketCurrency">
+         <option value="USD">
+          USD
+         </option>
+        </select>
+       </label>
+      </div>
+     </article>
+     <div class="filter-bar">
+      <label class="search-box">
+       &telrec;
+       <input id="marketSearch" placeholder="Search coin name or symbol&hellip;"/>
+      </label>
+      <span class="market-disclaimer">
+       Prices can be delayed or temporarily unavailable.
+      </span>
+     </div>
+     <article class="panel market-table-panel">
+      <div class="table-scroll">
+       <table>
+        <thead>
+         <tr>
+          <th>
+           RANK
+          </th>
+          <th>
+           ASSET
+          </th>
+          <th>
+           PRICE (USD)
+          </th>
+          <th>
+           24H CHANGE
+          </th>
+          <th>
+           MARKET CAP
+          </th>
+          <th>
+           24H VOLUME
+          </th>
+          <th>
+          </th>
+         </tr>
+        </thead>
+        <tbody id="marketBody">
+         <tr>
+          <td class="market-message" colspan="7">
+           Loading market data&hellip;
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="market-error" hidden="" id="marketError">
+      </div>
+     </article>
+     <p class="market-note">
+      Pasar data is informational only and is not a buy/sell recommendation. Use the star button to maintain a local watchlist on this browser.
+     </p>
+    </section>
+    <section class="view" id="view-risk">
+     <div class="page-heading">
+      <div>
+       <div class="eyebrow">
+        POSITION SIZING
+       </div>
+       <h1>
+        Kalkulator risiko
+       </h1>
+       <p>
+        Calculate position size from your planned risk and invalidation level.
+       </p>
+      </div>
+     </div>
+     <div class="risk-layout">
+      <article class="panel">
+       <div class="panel-heading">
+        <div>
+         <h2>
+          Position sizing
+         </h2>
+         <p>
+          Spot and linear USDT-margined examples
+         </p>
+        </div>
+       </div>
+       <form class="form-grid" id="riskForm">
+        <label>
+         Account balance (USDT)
+         <input id="riskBalance" min="0" required="" step="any" type="number" value="400"/>
+        </label>
+        <label>
+         Risk per trade (%)
+         <input id="riskPercent" max="100" min="0.01" required="" step="any" type="number" value="1"/>
+        </label>
+        <label>
+         Harga masuk
+         <input id="riskEntry" min="0" placeholder="e.g. 65000" required="" step="any" type="number"/>
+        </label>
+        <label>
+         Stop-loss price
+         <input id="riskStop" min="0" placeholder="e.g. 63700" required="" step="any" type="number"/>
+        </label>
+        <label>
+         Planned exit / target
+         <input id="riskTarget" min="0" placeholder="Optional" step="any" type="number"/>
+        </label>
+        <label>
+         Estimated fee (%) per side
+         <input id="riskFee" min="0" step="any" type="number" value="0.05"/>
+        </label>
+        <div class="form-actions full-field">
+         <button class="primary-button" type="submit">
+          Calculate position
+         </button>
+        </div>
+       </form>
+      </article>
+      <article class="panel risk-result-panel">
+       <div class="eyebrow">
+        CALCULATION RESULT
+       </div>
+       <div class="risk-big" id="riskAmount">
+        &mdash;
+        <small>
+         USDT risk
+        </small>
+       </div>
+       <div class="result-row">
+        <span>
+         Position size (notional)
+        </span>
+        <b id="riskNotional">
+         &mdash;
+        </b>
+       </div>
+       <div class="result-row">
+        <span>
+         Quantity (base asset)
+        </span>
+        <b id="riskQuantity">
+         &mdash;
+        </b>
+       </div>
+       <div class="result-row">
+        <span>
+         Estimated target reward
+        </span>
+        <b id="riskReward">
+         &mdash;
+        </b>
+       </div>
+       <div class="result-row">
+        <span>
+         Risk / reward
+        </span>
+        <b id="riskRR">
+         &mdash;
+        </b>
+       </div>
+       <div class="notice">
+        Calculator assumes a linear position and does not model slippage, liquidation, funding, inverse contracts, or exchange-specific contract rules. Verify values before placing any trade.
+       </div>
+      </article>
+     </div>
+    </section>
+    <footer class="footer">
+     <span>
+      EDGE JOURNAL
+      <i>
+       &bull;
+      </i>
+      PERSONAL CRYPTO WORKSPACE
+     </span>
+     <span id="lastSaved">
+      Local-first prototype &middot; no cloud connected
+     </span>
+    </footer>
+   </main>
+  </div>
+  <dialog class="modal github-modal" id="githubDialog">
+   <form id="githubForm">
+    <div class="modal-heading github-modal-heading">
+     <div class="github-heading-icon">
+      ◉
+     </div>
+     <div class="github-heading-copy">
+      <div class="eyebrow">
+       PENGATURAN GITHUB
+      </div>
+      <h2>
+       Hubungkan repository
+      </h2>
+      <p>
+       Hubungkan GitHub Pages dengan repository data privat agar jurnal dapat disinkronkan antarperangkat.
+      </p>
+     </div>
+     <button aria-label="Tutup" class="close-button" data-close="githubDialog" type="button">
+      &times;
+     </button>
+    </div>
+    <div class="github-instructions">
+     <b>
+      Token yang disarankan:
+     </b>
+     GitHub &rarr; Settings &rarr; Developer settings &rarr; Personal access tokens &rarr; Fine-grained tokens &rarr; Generate new token &rarr; pilih repository privat
+     <code>
+      edge-journal-data
+     </code>
+     &rarr; beri izin
+     <code>
+      Contents: Read and write
+     </code>
+     &rarr; buat dan salin token.
+    </div>
+    <div class="github-fields">
+     <label>
+      TOKEN AKSES PRIBADI
+      <input autocomplete="off" id="ghToken" placeholder="github_pat_&hellip; atau ghp_&hellip;" spellcheck="false" type="password"/>
+      <small>
+       Token tidak ditulis ke file JavaScript. Disimpan di browser ini agar koneksi tetap aktif.
+      </small>
+     </label>
+     <label>
+      NAMA PENGGUNA GITHUB (PEMILIK)
+      <input autocomplete="off" id="ghOwner" placeholder="faizfirdaus505" required="" type="text" value="faizfirdaus505"/>
+     </label>
+     <label>
+      REPOSITORY SITUS (GITHUB PAGES)
+      <input autocomplete="off" id="ghRepo" placeholder="porto2" required="" type="text" value="porto2"/>
+     </label>
+     <label>
+      REPOSITORY DATA JURNAL (WAJIB PRIVAT)
+      <input autocomplete="off" id="ghDataRepo" placeholder="edge-journal-data" required="" type="text" value="edge-journal-data"/>
+      <small>
+       Buat repository terpisah dengan visibilitas Private. Data jurnal tidak disimpan di repository situs.
+      </small>
+     </label>
+     <label>
+      BRANCH REPOSITORY DATA
+      <input autocomplete="off" id="ghBranch" placeholder="main" required="" type="text" value="main"/>
+     </label>
+     <label>
+      GITHUB PAGES URL (OPSIONAL)
+      <input id="ghPagesUrl" placeholder="https://faizfirdaus505.github.io/porto2/" type="url" value="https://faizfirdaus505.github.io/porto2/"/>
+      <small>
+       URL untuk membuka situs GitHub Pages. Kosongkan jika belum mengaktifkan Pages.
+      </small>
+     </label>
+    </div>
+    <div class="github-status" id="githubStatus" role="status">
+     <span class="github-status-dot">
+     </span>
+     <span>
+      Belum terhubung. Isi token dan detail repository untuk mulai.
+     </span>
+    </div>
+    <div class="github-security-note">
+     <b>
+      Keamanan:
+     </b>
+     token yang disimpan di browser tetap bisa diakses oleh orang yang memakai profil browser ini. Gunakan token dengan izin minimum dan repository privat. Jangan pernah memasukkan token exchange crypto.
+    </div>
+    <div class="modal-footer github-modal-footer">
+     <button class="outline-button" id="githubTestBtn" type="button">
+      UJI KONEKSI
+     </button>
+     <span class="modal-spacer">
+     </span>
+     <button class="outline-button" data-close="githubDialog" type="button">
+      BATAL
+     </button>
+     <button class="primary-button" id="githubSaveBtn" type="submit">
+      SIMPAN
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <dialog class="modal" id="tradeDialog">
+   <form id="tradeForm">
+    <div class="modal-heading">
+     <div>
+      <div class="eyebrow">
+       TRADE RECORD
+      </div>
+      <h2 id="tradeModalTitle">
+       Catat transaksi baru
+      </h2>
+     </div>
+     <button class="close-button" data-close="tradeDialog" type="button">
+      &times;
+     </button>
+    </div>
+    <input id="tradeId" type="hidden"/>
+    <div class="form-grid">
+     <label>
+      Pair / simbol
+      <input id="tradePair" maxlength="30" placeholder="BTC/IDR atau BTC/USDT" required=""/>
+      <small id="tradeQuoteHelp">
+       Spot umumnya BTC/IDR; Futures umumnya BTC/USDT.
+      </small>
+     </label>
+     <label>
+      Jenis pasar
+      <select id="tradeMarket">
+       <option>
+        Spot
+       </option>
+       <option>
+        Futures
+       </option>
+      </select>
+     </label>
+     <label>
+      Mata uang harga
+      <select id="tradeQuote">
+       <option value="IDR">
+        IDR (Rupiah)
+       </option>
+       <option selected="" value="USDT">
+        USDT (Tether)
+       </option>
+      </select>
+     </label>
+     <label>
+      Arah posisi
+      <select id="tradeSide">
+       <option>
+        Long
+       </option>
+       <option>
+        Short
+       </option>
+      </select>
+     </label>
+     <label>
+      Status
+      <select id="tradeStatus">
+       <option value="Closed">
+        Selesai
+       </option>
+       <option value="Open">
+        Terbuka
+       </option>
+      </select>
+     </label>
+     <label>
+      Strategi / setup
+      <input id="tradeSetup" maxlength="60" placeholder="Breakout, pullback&hellip;"/>
+     </label>
+     <label>
+      Kerangka waktu
+      <select id="tradeTimeframe">
+       <option>
+        1m
+       </option>
+       <option>
+        5m
+       </option>
+       <option>
+        15m
+       </option>
+       <option>
+        30m
+       </option>
+       <option>
+        1h
+       </option>
+       <option>
+        4h
+       </option>
+       <option>
+        1D
+       </option>
+       <option>
+        1W
+       </option>
+       <option>
+        Other
+       </option>
+      </select>
+     </label>
+     <label>
+      Harga masuk
+      <input id="tradeEntry" min="0" required="" step="any" type="number"/>
+     </label>
+     <label>
+      Harga keluar
+      <input id="tradeExit" min="0" placeholder="Wajib jika status selesai" step="any" type="number"/>
+     </label>
+     <label>
+      Jumlah aset (BTC/ETH, dst.)
+      <input id="tradeQty" min="0" placeholder="Base asset quantity" step="any" type="number"/>
+     </label>
+     <label>
+      Leverage Futures (x)
+      <input id="tradeLeverage" min="1" step="any" type="number" value="1"/>
+     </label>
+     <label>
+      Stop loss
+      <input id="tradeStop" min="0" step="any" type="number"/>
+     </label>
+     <label>
+      Target profit
+      <input id="tradeTarget" min="0" step="any" type="number"/>
+     </label>
+     <label>
+      <span id="tradeFeesLabel">
+       Biaya + funding (USDT)
+      </span>
+      <input id="tradeFees" step="any" type="number" value="0"/>
+     </label>
+     <label>
+      <span id="tradeManualPnlLabel">
+       P/L bersih manual (USDT)
+      </span>
+      <input id="tradeManualPnl" placeholder="Optional override" step="any" type="number"/>
+     </label>
+     <label>
+      Risk amount (USDT)
+      <input id="tradeRisk" min="0" step="any" type="number"/>
+     </label>
+     <label>
+      Tanggal transaksi
+      <input id="tradeDate" required="" type="date"/>
+     </label>
+     <label>
+      Kepatuhan rencana
+      <select id="tradeRules">
+       <option value="Yes">
+        Followed plan
+       </option>
+       <option value="Mostly">
+        Mostly followed
+       </option>
+       <option value="No">
+        Broke my rules
+       </option>
+       <option value="Not set">
+        Not recorded
+       </option>
+      </select>
+     </label>
+     <label>
+      Emosi
+      <select id="tradeEmotion">
+       <option>
+        Calm
+       </option>
+       <option>
+        Focused
+       </option>
+       <option>
+        Neutral
+       </option>
+       <option>
+        FOMO
+       </option>
+       <option>
+        Fear
+       </option>
+       <option>
+        Greed
+       </option>
+       <option>
+        Revenge trading
+       </option>
+       <option>
+        Tired
+       </option>
+      </select>
+     </label>
+     <label class="full-field">
+      Screenshot grafik
+      <input accept="image/*" id="tradeImage" type="file"/>
+      <small class="field-help">
+       Gambar disimpan bersama jurnal dan dapat memperbesar ukuran data.
+      </small>
+      <img alt="Trade screenshot preview" class="image-preview" hidden="" id="imagePreview"/>
+     </label>
+     <label class="full-field">
+      Alasan transaksi / catatan
+      <textarea id="tradeNotes" placeholder="Mengapa masuk? Apa yang mengonfirmasi atau membatalkan setup?" rows="3"></textarea>
+     </label>
+    </div>
+    <div class="modal-footer">
+     <button class="danger-button hidden" id="deleteTradeBtn" type="button">
+      Hapus transaksi
+     </button>
+     <span class="modal-spacer">
+     </span>
+     <button class="outline-button" data-close="tradeDialog" type="button">
+      Batal
+     </button>
+     <button class="primary-button" type="submit">
+      Simpan jurnal
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <input accept=".xlsx,.xls,.csv,.json,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv,application/json" hidden="" id="importFile" type="file"/>
+  <div aria-live="polite" class="toast" id="toast" role="status">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.4/jspdf.plugin.autotable.min.js">
+  </script>
+  <script src="app.js">
+  </script>
+ </body>
+</html>
+
