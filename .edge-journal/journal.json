@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-02T14:51:03.769Z",
+  "updatedAt": "2026-10-02T14:55:08.998Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -34,15 +34,15 @@
     {
       "id": "mur1yvwb3wimwk",
       "createdAt": 1790950974203,
-      "updatedAt": 1790952343405,
+      "updatedAt": 1790952906706,
       "date": "2026-10-02",
       "mood": "Calm",
       "adherence": "Yes",
       "mistake": "None identified",
       "good": "pembelian berjalan baik dan kita dapat untung 0,72",
-      "improve": "tidak melihat tren sebelumnya terlebih dahulu hanya mengikuti strategi secara buta",
-      "lesson": "melihat tren naik dulu lalu diskusikan dengan ai",
-      "freeform": "karena tren sedang naik dari awal hari patutdi curigai selanjutnya akan naik terus apalagi HL naik terus membuat support yang naik naik terus"
+      "improve": "1. tidak melihat tren sebelumnya terlebih dahulu hanya mengikuti strategi secara buta\n2. ketidak disiplinan dengan strategi",
+      "lesson": "1. melihat tren naik dulu lalu diskusikan dengan ai\n2. lebih baik memindahkan SL daripada harus langsung keluar market",
+      "freeform": "karena tren sedang naik dari awal hari patutdi curigai selanjutnya akan naik terus apalagi HL naik terus membuat support yang naik naik terus, pasar ternyata terus jatuh dan saya kehilangan potensi maksimal dari keuntungan karena ketakutan tak terukur"
     }
   ],
   "accountSettings": {
