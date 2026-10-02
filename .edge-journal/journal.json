@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-02T13:51:05.373Z",
+  "updatedAt": "2026-10-02T14:14:27.072Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -27,6 +27,32 @@
       "rules": "Yes",
       "emotion": "Fear",
       "notes": "",
+      "image": ""
+    },
+    {
+      "id": "mur1nyt4cdku7v",
+      "createdAt": 1790950464760,
+      "updatedAt": 1790950464760,
+      "pair": "BTC/IDR",
+      "market": "Spot",
+      "quote": "IDR",
+      "side": "Long",
+      "status": "Open",
+      "setup": "Pullback",
+      "timeframe": "5m",
+      "entry": "86624.5",
+      "exit": "",
+      "qty": "0.0011",
+      "leverage": "10",
+      "stop": "0.64",
+      "target": "1.14",
+      "fees": "1700",
+      "manualPnl": "0.64",
+      "risk": "0.64",
+      "date": "2026-10-02",
+      "rules": "Yes",
+      "emotion": "Greed",
+      "notes": "seharusnya saya lihat tren sedang naik dan tidak mencoba meawan tren",
       "image": ""
     }
   ],
