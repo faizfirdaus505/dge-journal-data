@@ -1,12 +1,12 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-02T14:17:36.567Z",
+  "updatedAt": "2026-10-02T14:17:58.479Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
       "createdAt": 1790949063121,
-      "updatedAt": 1790949063121,
+      "updatedAt": 1790950654451,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
