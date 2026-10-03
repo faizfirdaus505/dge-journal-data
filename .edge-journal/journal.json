@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-03T14:13:39.457Z",
+  "updatedAt": "2026-10-03T14:18:07.266Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -69,6 +69,19 @@
       "improve": "1. tidak melihat tren sebelumnya terlebih dahulu hanya mengikuti strategi secara buta\n2. ketidak disiplinan dengan strategi",
       "lesson": "1. melihat tren naik dulu lalu diskusikan dengan ai\n2. lebih baik memindahkan SL daripada harus langsung keluar market\n\n\"Jika posisi sudah berjalan sejauh 1R / 50% menuju Target Profit, geser Stop Loss ke Break Even (Entry). Setelah itu, lepaskan mouse dan biarkan pasar yang bekerja menembus TP atau mengenai BE.\"",
       "freeform": "karena tren sedang naik dari awal hari patutdi curigai selanjutnya akan naik terus apalagi HL naik terus membuat support yang naik naik terus, pasar ternyata terus jatuh dan saya kehilangan potensi maksimal dari keuntungan karena ketakutan tak terukur"
+    },
+    {
+      "id": "mush5k6tynvvp8",
+      "createdAt": 1791036946037,
+      "updatedAt": 1791036946037,
+      "date": "2026-10-03",
+      "mood": "Calm",
+      "adherence": "Yes",
+      "mistake": "None identified",
+      "good": "hari ini saya tidak membuat transaksi sama sekali di karenakan gap market yang terlalu kecil sehingga jikapun saya masuk dan saya gunakan strategi malah terpotong fee nantinya",
+      "improve": "strategi harus tetap di ikuti",
+      "lesson": "tenang tidak perlu melakukan trade tiap harinya",
+      "freeform": "market hari ini terlalu sempit  selain keuntungan yang sedikit dapat membuat rugi karena fee, selain itu grafiknya tidak mendukung untuk strategi saya, saya harus tetap patuh dengan strategi yang sudah saya bangun"
     }
   ],
   "accountSettings": {
