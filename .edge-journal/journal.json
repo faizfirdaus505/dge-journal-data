@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-04T21:59:13.015Z",
+  "updatedAt": "2026-10-04T22:04:48.412Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -108,6 +108,19 @@
       "improve": "strategi harus tetap di ikuti",
       "lesson": "tenang tidak perlu melakukan trade tiap harinya",
       "freeform": "market hari ini terlalu sempit  selain keuntungan yang sedikit dapat membuat rugi karena fee, selain itu grafiknya tidak mendukung untuk strategi saya, saya harus tetap patuh dengan strategi yang sudah saya bangun"
+    },
+    {
+      "id": "muudcjy5r0bo3p",
+      "createdAt": 1791151486205,
+      "updatedAt": 1791151486205,
+      "date": "2026-10-04",
+      "mood": "Focused",
+      "adherence": "Yes",
+      "mistake": "None identified",
+      "good": "gap hari ini lebih baik dari pada kemarin jadi kita bisa entry",
+      "improve": "karena saya memiliki strategi baru yaitu memadukan strategi fakeout dan breakout agar selalu mendapatkan untung di setiap pergerakan chart saya harus lebih banyak belajar untuk membedakan nya",
+      "lesson": "harus bisa mengidentifikasi apakah saatnya memakai fakeout atau breakout",
+      "freeform": "hari ini karena tren nya saya lihat naik terus saya memutuskan memakai breakout karena HL terus terbentuk sebelumnya dan garis yang berhasil melewati batas 4 jam pertama adalah candle hijau yang cukup kuat dan berkali kali"
     }
   ],
   "accountSettings": {
