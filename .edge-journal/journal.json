@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-03T14:18:07.266Z",
+  "updatedAt": "2026-10-04T10:05:47.086Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -53,6 +53,32 @@
       "rules": "Yes",
       "emotion": "Calm",
       "notes": "",
+      "image": ""
+    },
+    {
+      "id": "mutnnw55kcisqi",
+      "createdAt": 1791108345209,
+      "updatedAt": 1791108345209,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Long",
+      "status": "Open",
+      "setup": "Breakout & Pullback (Retest Support)",
+      "timeframe": "5m",
+      "entry": "85180.2",
+      "exit": "",
+      "qty": "0.0011",
+      "leverage": "10",
+      "stop": "85018",
+      "target": "85628",
+      "fees": "0",
+      "manualPnl": "",
+      "risk": "0.25",
+      "date": "2026-10-04",
+      "rules": "Yes",
+      "emotion": "Calm",
+      "notes": "Menunggu konfirmasi breakout resistansi $85.150. Terjadi retest/pullback sehat ke area $85.150 dengan munculnya ekor penolakan bawah (lower shadow/wick rejection) pada candle 5-menit yang memvalidasi pembeli masuk kembali (Resistance Become Support). Rasio Risk-to-Reward ideal 1 : 2,75 dengan risiko terukur sebesar ₮0,25.",
       "image": ""
     }
   ],
