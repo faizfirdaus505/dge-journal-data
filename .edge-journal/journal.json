@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-04T22:04:48.412Z",
+  "updatedAt": "2026-10-05T09:32:30.032Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -112,9 +112,9 @@
     {
       "id": "muudcjy5r0bo3p",
       "createdAt": 1791151486205,
-      "updatedAt": 1791151486205,
+      "updatedAt": 1791151528801,
       "date": "2026-10-04",
-      "mood": "Focused",
+      "mood": "Calm",
       "adherence": "Yes",
       "mistake": "None identified",
       "good": "gap hari ini lebih baik dari pada kemarin jadi kita bisa entry",
@@ -127,7 +127,7 @@
     "idrBalance": 85102,
     "usdtBalance": 21.82,
     "usdtIdrRate": 17904.38,
-    "updatedAt": 1791151148480
+    "updatedAt": 1791192747362
   },
   "deletedRecords": [
     "trade:mur1nyt4cdku7v"
