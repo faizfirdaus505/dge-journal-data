@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-05T14:49:36.431Z",
+  "updatedAt": "2026-10-05T15:02:16.975Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -84,11 +84,11 @@
     {
       "id": "muvd8qgjnsr3c5",
       "createdAt": 1791211774195,
-      "updatedAt": 1791211774195,
+      "updatedAt": 1791212535163,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
-      "side": "Long",
+      "side": "Short",
       "status": "Closed",
       "setup": "Strategi / setup: Fakeout / Rejection Resistance",
       "timeframe": "5m",
