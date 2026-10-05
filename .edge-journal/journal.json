@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-05T16:31:28.858Z",
+  "updatedAt": "2026-10-05T16:31:50.031Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -151,8 +151,8 @@
     {
       "id": "muvgvr5t9bl8x3",
       "createdAt": 1791217887041,
-      "updatedAt": 1791217887041,
-      "date": "2026-10-04",
+      "updatedAt": 1791217907745,
+      "date": "2026-10-05",
       "mood": "Frustrated",
       "adherence": "Mostly",
       "mistake": "Late exit",
