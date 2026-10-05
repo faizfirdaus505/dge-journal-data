@@ -1,18 +1,18 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-05T15:02:16.975Z",
+  "updatedAt": "2026-10-05T16:31:28.858Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
       "createdAt": 1790949063121,
-      "updatedAt": 1790952581602,
+      "updatedAt": 1791212545067,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
       "side": "Short",
       "status": "Closed",
-      "setup": "Fakeout",
+      "setup": "Strategi / setup: Fakeout / Rejection Resistance",
       "timeframe": "5m",
       "entry": "86624.5",
       "exit": "86301.0",
@@ -147,6 +147,19 @@
       "improve": "karena saya memiliki strategi baru yaitu memadukan strategi fakeout dan breakout agar selalu mendapatkan untung di setiap pergerakan chart saya harus lebih banyak belajar untuk membedakan nya",
       "lesson": "harus bisa mengidentifikasi apakah saatnya memakai fakeout atau breakout",
       "freeform": "hari ini karena tren nya saya lihat naik terus saya memutuskan memakai breakout karena HL terus terbentuk sebelumnya dan garis yang berhasil melewati batas 4 jam pertama adalah candle hijau yang cukup kuat dan berkali kali"
+    },
+    {
+      "id": "muvgvr5t9bl8x3",
+      "createdAt": 1791217887041,
+      "updatedAt": 1791217887041,
+      "date": "2026-10-04",
+      "mood": "Frustrated",
+      "adherence": "Mostly",
+      "mistake": "Late exit",
+      "good": "di hari senin atau hari kerja gap 4 jam lebih  besar sehingga kita memiiki kesempatan untuk masuk pakai fakeout tadi",
+      "improve": "kita harus taat dengan TP jika TP sudah lewat tapi belum tereksekusi maka kita close market secara manual saja tidak usah kita tunggu lagi dan jika kita mungkin tunggu lagi sampai sekarang justur kita akan kena TP lai jadi kita seharusnya lebih sabar",
+      "lesson": "jangan rakus dengan menunggu angka di bawah tp kita close saja dan jangan malah bingung sendiri",
+      "freeform": "hari ini kita berhasil masuk 2 kali dan jangan terlalu mengandalkan SL dan TP karena tadi pun TP tidak terkesekusi dan seharusnya kita tadi langsung close market 100% karena jika 50 50 maka fee akan 2 kali dan juga yang kedua tadi malah close market di harga yang sangat kecil"
     }
   ],
   "accountSettings": {
