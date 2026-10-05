@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-05T16:31:50.031Z",
+  "updatedAt": "2026-10-05T22:05:57.046Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -105,6 +105,32 @@
       "rules": "Mostly",
       "emotion": "Tired",
       "notes": "Setup Short berdasarkan penolakan harga di resistance $86.400. Posisi ditutup manual di Pluang pada harga $85.725 karena pemicu TP belum terdaftar otomatis. Hasil akhir transaksi berada di titik impas (break-even) akibat terpotong biaya transaksi dan pajak platform.",
+      "image": ""
+    },
+    {
+      "id": "muvstvaoyfdq6l",
+      "createdAt": 1791237954480,
+      "updatedAt": 1791237954480,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Short",
+      "status": "Closed",
+      "setup": "",
+      "timeframe": "1m",
+      "entry": "85108",
+      "exit": "85558.7",
+      "qty": "0.0011",
+      "leverage": "10",
+      "stop": "85558.7",
+      "target": "84069.7",
+      "fees": "0",
+      "manualPnl": "-0.62",
+      "risk": "0.62",
+      "date": "2026-10-05",
+      "rules": "Yes",
+      "emotion": "Greed",
+      "notes": "- Alasan Entry: Masuk Short di $85.108 mengikuti momentum breakout di bawah support psikologis $85.000 (TF 5m).\n- Realisasi Pasar: Terjadi fakeout / liquidity sweep. Pembeli merespons cepat di area $85.000 dan memicu pantulan kencang ke atas hingga mengenai Stop Loss di $85.558,7.\n- Evaluasi & Pelajaran:\n  1. Pengaman (SL) bekerja 100% sempurna, kerugian berhasil terkunci rapi di -0,62 USDT tanpa kena floating lebih dalam.\n  2. Perlu observasi lebih lama pada support besar sebelum mengejar Short di ujung bawah untuk menghindari jebakan pantulan.",
       "image": ""
     }
   ],
