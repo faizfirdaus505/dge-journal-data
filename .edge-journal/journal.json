@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-06T12:32:31.847Z",
+  "updatedAt": "2026-10-06T12:37:29.945Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -136,12 +136,12 @@
     {
       "id": "muwkbgmfiigi2f",
       "createdAt": 1791284124903,
-      "updatedAt": 1791289554856,
+      "updatedAt": 1791290248107,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
       "side": "Long",
-      "status": "Open",
+      "status": "Closed",
       "setup": "SuperTrend Flip & Support Rejection",
       "timeframe": "5m",
       "entry": "85499.9",
@@ -216,9 +216,9 @@
   ],
   "accountSettings": {
     "idrBalance": 85102,
-    "usdtBalance": 45567,
+    "usdtBalance": 21.29,
     "usdtIdrRate": 17911.9,
-    "updatedAt": 1791289950032
+    "updatedAt": 1791289960256
   },
   "deletedRecords": [
     "trade:mur1nyt4cdku7v"
