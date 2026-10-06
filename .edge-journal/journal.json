@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-06T12:48:30.098Z",
+  "updatedAt": "2026-10-06T13:41:02.159Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -110,13 +110,13 @@
     {
       "id": "muvstvaoyfdq6l",
       "createdAt": 1791237954480,
-      "updatedAt": 1791290894849,
+      "updatedAt": 1791294060330,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
       "side": "Short",
       "status": "Closed",
-      "setup": "",
+      "setup": "Breakout & Pullback (Retest Support)",
       "timeframe": "1m",
       "entry": "85108",
       "exit": "85558.7",
