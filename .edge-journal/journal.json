@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-06T12:29:25.794Z",
+  "updatedAt": "2026-10-06T12:32:31.847Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -32,7 +32,7 @@
     {
       "id": "murw5vsjtr4vdu",
       "createdAt": 1791001689139,
-      "updatedAt": 1791001689139,
+      "updatedAt": 1791289766119,
       "pair": "BTC/IDR",
       "market": "Spot",
       "quote": "IDR",
@@ -58,7 +58,7 @@
     {
       "id": "mutnnw55kcisqi",
       "createdAt": 1791108345209,
-      "updatedAt": 1791150949299,
+      "updatedAt": 1791289769314,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -84,7 +84,7 @@
     {
       "id": "muvd8qgjnsr3c5",
       "createdAt": 1791211774195,
-      "updatedAt": 1791212535163,
+      "updatedAt": 1791289779383,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -102,7 +102,7 @@
       "manualPnl": "0",
       "risk": "0.63",
       "date": "2026-10-05",
-      "rules": "Mostly",
+      "rules": "No",
       "emotion": "Tired",
       "notes": "Setup Short berdasarkan penolakan harga di resistance $86.400. Posisi ditutup manual di Pluang pada harga $85.725 karena pemicu TP belum terdaftar otomatis. Hasil akhir transaksi berada di titik impas (break-even) akibat terpotong biaya transaksi dan pajak platform.",
       "image": ""
@@ -216,9 +216,9 @@
   ],
   "accountSettings": {
     "idrBalance": 85102,
-    "usdtBalance": 21.29,
+    "usdtBalance": 45567,
     "usdtIdrRate": 17911.9,
-    "updatedAt": 1791289714470
+    "updatedAt": 1791289950032
   },
   "deletedRecords": [
     "trade:mur1nyt4cdku7v"
