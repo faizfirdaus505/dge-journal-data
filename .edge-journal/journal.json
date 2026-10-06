@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-06T12:44:57.807Z",
+  "updatedAt": "2026-10-06T12:45:23.200Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -58,7 +58,7 @@
     {
       "id": "mutnnw55kcisqi",
       "createdAt": 1791108345209,
-      "updatedAt": 1791289769314,
+      "updatedAt": 1791290717377,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -73,7 +73,7 @@
       "stop": "85018",
       "target": "85628",
       "fees": "0",
-      "manualPnl": "0.06",
+      "manualPnl": "0",
       "risk": "0.25",
       "date": "2026-10-04",
       "rules": "Yes",
@@ -110,7 +110,7 @@
     {
       "id": "muvstvaoyfdq6l",
       "createdAt": 1791237954480,
-      "updatedAt": 1791237954480,
+      "updatedAt": 1791290712422,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -125,7 +125,7 @@
       "stop": "85558.7",
       "target": "84069.7",
       "fees": "0",
-      "manualPnl": "-0.62",
+      "manualPnl": "0",
       "risk": "0.62",
       "date": "2026-10-05",
       "rules": "Yes",
@@ -216,9 +216,9 @@
   ],
   "accountSettings": {
     "idrBalance": 85102,
-    "usdtBalance": 21.29,
+    "usdtBalance": 21.64,
     "usdtIdrRate": 17911.9,
-    "updatedAt": 1791289960256
+    "updatedAt": 1791290703886
   },
   "deletedRecords": [
     "trade:mur1nyt4cdku7v"
