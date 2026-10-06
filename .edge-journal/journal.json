@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-05T22:59:14.800Z",
+  "updatedAt": "2026-10-06T10:55:26.717Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -132,6 +132,32 @@
       "emotion": "Greed",
       "notes": "- Alasan Entry: Masuk Short di $85.108 mengikuti momentum breakout di bawah support psikologis $85.000 (TF 5m).\n- Realisasi Pasar: Terjadi fakeout / liquidity sweep. Pembeli merespons cepat di area $85.000 dan memicu pantulan kencang ke atas hingga mengenai Stop Loss di $85.558,7.\n- Evaluasi & Pelajaran:\n  1. Pengaman (SL) bekerja 100% sempurna, kerugian berhasil terkunci rapi di -0,62 USDT tanpa kena floating lebih dalam.\n  2. Perlu observasi lebih lama pada support besar sebelum mengejar Short di ujung bawah untuk menghindari jebakan pantulan.",
       "image": ""
+    },
+    {
+      "id": "muwkbgmfiigi2f",
+      "createdAt": 1791284124903,
+      "updatedAt": 1791284124903,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Long",
+      "status": "Open",
+      "setup": "SuperTrend Flip & Support Rejection",
+      "timeframe": "1m",
+      "entry": "85499.9",
+      "exit": "",
+      "qty": "0.0011",
+      "leverage": "10",
+      "stop": "85067",
+      "target": "86389",
+      "fees": "0.05",
+      "manualPnl": "",
+      "risk": "0.47",
+      "date": "2026-10-06",
+      "rules": "Yes",
+      "emotion": "Focused",
+      "notes": "- Alasan Entry: Konfirmasi indikator SuperTrend berubah hijau di TF 5m ($85.286) serta harga berhasil bertahan di atas EMA 20/50 setelah memantul dari area support $85.000.\n- Manajemen Risiko: Stop Loss terpasang terdisiplin di $85.067,6 (risiko terkunci di $0,47) dan Target Profit di $86.389.\n- Catatan Eksekusi: Stochastic sempat overbought (100.00), waspadai fluktuasi/koreksi tipis sebelum harga menguji tembok VWAP di kisaran $85.644.",
+      "image": ""
     }
   ],
   "reviews": [
@@ -190,9 +216,9 @@
   ],
   "accountSettings": {
     "idrBalance": 85102,
-    "usdtBalance": 22.92,
+    "usdtBalance": 21.29,
     "usdtIdrRate": 17911.9,
-    "updatedAt": 1791241152520
+    "updatedAt": 1791241183632
   },
   "deletedRecords": [
     "trade:mur1nyt4cdku7v"
