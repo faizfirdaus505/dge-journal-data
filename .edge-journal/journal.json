@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-06T13:41:02.159Z",
+  "updatedAt": "2026-10-07T07:15:28.756Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -212,6 +212,19 @@
       "improve": "kita harus taat dengan TP jika TP sudah lewat tapi belum tereksekusi maka kita close market secara manual saja tidak usah kita tunggu lagi dan jika kita mungkin tunggu lagi sampai sekarang justur kita akan kena TP lai jadi kita seharusnya lebih sabar",
       "lesson": "jangan rakus dengan menunggu angka di bawah tp kita close saja dan jangan malah bingung sendiri",
       "freeform": "hari ini kita berhasil masuk 2 kali dan jangan terlalu mengandalkan SL dan TP karena tadi pun TP tidak terkesekusi dan seharusnya kita tadi langsung close market 100% karena jika 50 50 maka fee akan 2 kali dan juga yang kedua tadi malah close market di harga yang sangat kecil"
+    },
+    {
+      "id": "muxrwfdrse34l7",
+      "createdAt": 1791357326559,
+      "updatedAt": 1791357326559,
+      "date": "2026-10-06",
+      "mood": "Calm",
+      "adherence": "Yes",
+      "mistake": "None identified",
+      "good": "saya hari ini telah melakukan transaksi long dengan strategi fakeout dan berhasil pacuan utama saya yaitu supertrend sehingga saya bisa lihat begitu super trend berpotongan dan di lanjut oleh candle 5 menit berikutnya tetap mendukung perpotongan itu itu waktunya saya untuk masuk",
+      "improve": "tidak ada pertahankan strategi dengan baik dan disiplin",
+      "lesson": "perhatikan supertrend dan juga stoch",
+      "freeform": ""
     }
   ],
   "accountSettings": {
