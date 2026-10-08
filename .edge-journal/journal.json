@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-08T06:05:15.891Z",
+  "updatedAt": "2026-10-08T06:07:58.469Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -188,7 +188,7 @@
     {
       "id": "muz4tza8zg6mzb",
       "createdAt": 1791439513568,
-      "updatedAt": 1791439513568,
+      "updatedAt": 1791439676110,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -208,7 +208,7 @@
       "date": "2026-10-08",
       "rules": "Yes",
       "emotion": "Greed",
-      "notes": "",
+      "notes": "terlalu terburu buru masuk",
       "image": ""
     }
   ],
