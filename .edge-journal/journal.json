@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-08T09:34:45.429Z",
+  "updatedAt": "2026-10-08T11:18:09.869Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -214,7 +214,7 @@
     {
       "id": "muzcbedt4ntuv5",
       "createdAt": 1791452083601,
-      "updatedAt": 1791452083601,
+      "updatedAt": 1791458288043,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -223,13 +223,13 @@
       "setup": "Breakout & Pullback (Retest Support)",
       "timeframe": "5m",
       "entry": "83070",
-      "exit": "",
-      "qty": "",
+      "exit": "82705",
+      "qty": "0.0012",
       "leverage": "10",
       "stop": "82705",
       "target": "83555",
       "fees": "0",
-      "manualPnl": "",
+      "manualPnl": "-1.8",
       "risk": "0.4",
       "date": "2026-10-08",
       "rules": "Yes",
