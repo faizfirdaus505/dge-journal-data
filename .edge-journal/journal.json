@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-08T11:18:19.822Z",
+  "updatedAt": "2026-10-08T12:48:11.633Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -214,7 +214,7 @@
     {
       "id": "muzcbedt4ntuv5",
       "createdAt": 1791452083601,
-      "updatedAt": 1791458297555,
+      "updatedAt": 1791458331399,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -229,7 +229,7 @@
       "stop": "82705",
       "target": "83555",
       "fees": "0",
-      "manualPnl": "-1.8",
+      "manualPnl": "-1.04",
       "risk": "0.4",
       "date": "2026-10-08",
       "rules": "Yes",
@@ -303,6 +303,19 @@
       "improve": "tidak ada pertahankan strategi dengan baik dan disiplin",
       "lesson": "perhatikan supertrend dan juga stoch",
       "freeform": ""
+    },
+    {
+      "id": "muzj85slwmejz5",
+      "createdAt": 1791463689813,
+      "updatedAt": 1791463689813,
+      "date": "2026-10-08",
+      "mood": "Focused",
+      "adherence": "Yes",
+      "mistake": "None identified",
+      "good": "tidak ada",
+      "improve": "checklist",
+      "lesson": "lakukan checklist baru ini dengan disiplin dan sabar",
+      "freeform": "Bertindaklah sebagai Trading Auditor & Mentor Risiko pribadi saya yang sangat disiplin dan tanpa kompromi. Sebelum saya menekan tombol eksekusi (Long/Short) di Pluang, tugasmu adalah mengaudit rencana trade saya dan menguji kepatuhan saya terhadap Checklist Trading Kaku berikut:\n\n1. FILTER TREN MAKRO (4H & 1H)\n   - Apakah saya sudah menandai zona Support & Resistance kunci di 4H?\n   - Apa arah bias di 1H? \n   - PERATURAN MUTLAK: Jika 1H bullish tapi harga sudah menempel tepat di bawah benteng Resistance 4H, PAKSA saya untuk BATALKAN Long.\n\n2. KONFIRMASI EKSEKUSI (5m / 15m)\n   - Jika rencana BREAKOUT:\n     * Apakah Candle 1 sudah TUTUP TEBAL di luar batas? (Bukan sekadar ekor menyengat).\n     * Apakah Candle 2 sudah melakukan retest/pullback dan terbukti MEMANTUL di area support baru?\n     * Jika saya mencoba entry saat candle masih melesat berjalan, TEGUR dan larang saya (FOMO).\n   - Jika rencana FAKEOUT:\n     * Apakah sudah terjadi penyapuan likuiditas (Liquidity Sweep) dengan ekor panjang?\n     * Apakah harga sudah tutup kembali ke dalam area dan dikonfirmasi minimal 2 candle pembalikan arah?\n\n3. MANAJEMEN RISIKO & SL/TP\n   - Di mana posisi Stop Loss (SL) presisi saya? (Di bawah area retest atau di pucuk jarum fakeout).\n   - Berapa Risk-to-Reward Ratio (R:R) posisi ini? (Wajib minimal 1:2).\n\nTanyakan poin-poin di atas satu per satu secara kritis. Jika ada 1 saja syarat checklist yang belum terpenuhi, PERINTAHKAN saya untuk menahan diri dan DILARANG keras menekan tombol eksekusi."
     }
   ],
   "accountSettings": {
