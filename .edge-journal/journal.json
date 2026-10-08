@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-08T13:42:11.078Z",
+  "updatedAt": "2026-10-08T13:43:55.210Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -240,27 +240,27 @@
     {
       "id": "muzkkuthzqwje3",
       "createdAt": 1791465961733,
-      "updatedAt": 1791466929249,
+      "updatedAt": 1791467033383,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
       "side": "Long",
-      "status": "Open",
+      "status": "Closed",
       "setup": "Liquidity Sweep / Bear Trap (Fakeout Support 1H)",
       "timeframe": "1m",
       "entry": "82498",
-      "exit": "",
+      "exit": "82197",
       "qty": "0.0012",
       "leverage": "10",
       "stop": "82197",
       "target": "82909",
       "fees": "0",
-      "manualPnl": "",
+      "manualPnl": "-1.04",
       "risk": "0.27",
       "date": "2026-10-08",
       "rules": "Yes",
       "emotion": "Focused",
-      "notes": "pada 1H candle gagal tembus hingga bawah namun di candle berikutnya terjadi kenaikan lalu saya pindah ke 15M untunk melihat lebih detail lalu bersipa eksekusi di 5M karena terjadi penolakan ke atas di 1H jadi saya memakai fakeout",
+      "notes": "pada 1H candle gagal tembus hingga bawah namun di candle berikutnya terjadi kenaikan lalu saya pindah ke 15M untunk melihat lebih detail lalu bersipa eksekusi di 5M karena terjadi penolakan ke atas di 1H jadi saya memakai fakeout\nnamun ada kesalahan yaitu kita seharusnya jangan mengambil kesimpulan pada candle 1H yang masih bergerak kita harus biarkan candle itu terbentuk sempurna dulu lalu kita cari validasi di candle sempurna selanjutnya",
       "image": ""
     }
   ],
