@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-09T12:59:32.188Z",
+  "updatedAt": "2026-10-09T13:11:57.644Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -318,12 +318,12 @@
     {
       "id": "mv0x5vb4japnlu",
       "createdAt": 1791547563712,
-      "updatedAt": 1791550769892,
+      "updatedAt": 1791550799424,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
       "side": "Long",
-      "status": "Open",
+      "status": "Closed",
       "setup": "Breakour",
       "timeframe": "5m",
       "entry": "83302",
@@ -333,7 +333,7 @@
       "stop": "82759",
       "target": "83926",
       "fees": "0",
-      "manualPnl": "-1",
+      "manualPnl": "-1.82",
       "risk": "0",
       "date": "2026-10-09",
       "rules": "Yes",
@@ -420,6 +420,19 @@
       "improve": "checklist",
       "lesson": "lakukan checklist baru ini dengan disiplin dan sabar",
       "freeform": "1. FILTER TREN MAKRO (4H & 1H)\n   - Apakah saya sudah menandai zona Support & Resistance kunci di 4H?\n   - Apa arah bias di 1H? \n   - PERATURAN MUTLAK: Jika 1H bullish tapi harga sudah menempel tepat di bawah benteng Resistance 4H, PAKSA saya untuk BATALKAN Long.\n\n2. KONFIRMASI EKSEKUSI (5m / 15m)\n   - Jika rencana BREAKOUT:\n     * Apakah Candle 1 sudah TUTUP TEBAL di luar batas? (Bukan sekadar ekor menyengat).\n     * Apakah Candle 2 sudah melakukan retest/pullback dan terbukti MEMANTUL di area support baru?\n     * Jika saya mencoba entry saat candle masih melesat berjalan, TEGUR dan larang saya (FOMO).\n   - Jika rencana FAKEOUT:\n     * Apakah sudah terjadi penyapuan likuiditas (Liquidity Sweep) dengan ekor panjang?\n     * Apakah harga sudah tutup kembali ke dalam area dan dikonfirmasi minimal 2 candle pembalikan arah?\n\n3. MANAJEMEN RISIKO & SL/TP\n   - Di mana posisi Stop Loss (SL) presisi saya? (Di bawah area retest atau di pucuk jarum fakeout).\n   - Berapa Risk-to-Reward Ratio (R:R) posisi ini? (Wajib minimal 1:2).\n\nTanyakan poin-poin di atas satu per satu secara kritis. Jika ada 1 saja syarat checklist yang belum terpenuhi, PERINTAHKAN saya untuk menahan diri dan DILARANG keras menekan tombol eksekusi."
+    },
+    {
+      "id": "mv0zikf3ckszyj",
+      "createdAt": 1791551515359,
+      "updatedAt": 1791551515359,
+      "date": "2026-10-09",
+      "mood": "Frustrated",
+      "adherence": "Yes",
+      "mistake": "Other",
+      "good": "gada",
+      "improve": "gemini tolol nya minta ampun, sop kacau semua ajg",
+      "lesson": "ikuti sop",
+      "freeform": ""
     }
   ],
   "accountSettings": {
