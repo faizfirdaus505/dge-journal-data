@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-09T11:49:32.703Z",
+  "updatedAt": "2026-10-09T11:58:06.082Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -292,12 +292,12 @@
     {
       "id": "mv0w92te2gos9f",
       "createdAt": 1791546033794,
-      "updatedAt": 1791546570089,
+      "updatedAt": 1791547083357,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
       "side": "Long",
-      "status": "Open",
+      "status": "Closed",
       "setup": "breakout",
       "timeframe": "5m",
       "entry": "82834",
@@ -307,7 +307,7 @@
       "stop": "82559",
       "target": "83283",
       "fees": "0",
-      "manualPnl": "-0.05",
+      "manualPnl": "-0.04",
       "risk": "0",
       "date": "2026-10-09",
       "rules": "Yes",
