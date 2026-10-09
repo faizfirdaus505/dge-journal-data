@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-08T13:43:55.210Z",
+  "updatedAt": "2026-10-09T11:38:01.003Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -261,6 +261,32 @@
       "rules": "Yes",
       "emotion": "Focused",
       "notes": "pada 1H candle gagal tembus hingga bawah namun di candle berikutnya terjadi kenaikan lalu saya pindah ke 15M untunk melihat lebih detail lalu bersipa eksekusi di 5M karena terjadi penolakan ke atas di 1H jadi saya memakai fakeout\nnamun ada kesalahan yaitu kita seharusnya jangan mengambil kesimpulan pada candle 1H yang masih bergerak kita harus biarkan candle itu terbentuk sempurna dulu lalu kita cari validasi di candle sempurna selanjutnya",
+      "image": ""
+    },
+    {
+      "id": "mv0w5rim94hddt",
+      "createdAt": 1791545879182,
+      "updatedAt": 1791545879182,
+      "pair": "BTC/IDR",
+      "market": "Spot",
+      "quote": "IDR",
+      "side": "Long",
+      "status": "Closed",
+      "setup": "fakeout",
+      "timeframe": "5m",
+      "entry": "82401",
+      "exit": "82712",
+      "qty": "0.0012",
+      "leverage": "10",
+      "stop": "82712",
+      "target": "82150",
+      "fees": "0",
+      "manualPnl": "-1.4",
+      "risk": "0",
+      "date": "2026-10-09",
+      "rules": "Yes",
+      "emotion": "Calm",
+      "notes": "",
       "image": ""
     }
   ],
