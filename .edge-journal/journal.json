@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-09T12:06:05.851Z",
+  "updatedAt": "2026-10-09T12:59:32.188Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -318,7 +318,7 @@
     {
       "id": "mv0x5vb4japnlu",
       "createdAt": 1791547563712,
-      "updatedAt": 1791547563712,
+      "updatedAt": 1791550769892,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -327,13 +327,13 @@
       "setup": "Breakour",
       "timeframe": "5m",
       "entry": "83302",
-      "exit": "",
+      "exit": "82870",
       "qty": "0.0012",
       "leverage": "10",
       "stop": "82759",
       "target": "83926",
       "fees": "0",
-      "manualPnl": "",
+      "manualPnl": "-1",
       "risk": "0",
       "date": "2026-10-09",
       "rules": "Yes",
