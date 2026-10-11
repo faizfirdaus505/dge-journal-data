@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-11T11:41:42.296Z",
+  "updatedAt": "2026-10-11T13:23:04.827Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -365,6 +365,32 @@
       "rules": "Yes",
       "emotion": "Focused",
       "notes": "Menunggu harga turun menjemput Limit Order di 82854 setelah terjadi konfirmasi penolakan (liquidity sweep) di area support 5m. Disiplin menggunakan limit tanpa mengejar pasar, dengan rasio Risk-to-Reward terpenuhi di atas 1:2 (SL: 82672, TP: 83215)",
+      "image": ""
+    },
+    {
+      "id": "mv3uskca7lpryu",
+      "createdAt": 1791724982266,
+      "updatedAt": 1791724982266,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Short",
+      "status": "Open",
+      "setup": "Fakeout / Rejection Resistance",
+      "timeframe": "15m",
+      "entry": "83031",
+      "exit": "",
+      "qty": "0.0012",
+      "leverage": "10",
+      "stop": "83221.9",
+      "target": "82649",
+      "fees": "0",
+      "manualPnl": "",
+      "risk": "0",
+      "date": "2026-10-11",
+      "rules": "Yes",
+      "emotion": "Calm",
+      "notes": "",
       "image": ""
     }
   ],
