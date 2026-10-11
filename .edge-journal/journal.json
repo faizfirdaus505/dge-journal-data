@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-11T07:49:38.354Z",
+  "updatedAt": "2026-10-11T11:41:42.296Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -344,7 +344,7 @@
     {
       "id": "mv3gtnpe02i0u7",
       "createdAt": 1791701518658,
-      "updatedAt": 1791704976655,
+      "updatedAt": 1791705007035,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -359,7 +359,7 @@
       "stop": "82672",
       "target": "83215",
       "fees": "0",
-      "manualPnl": "0.7",
+      "manualPnl": "0.67",
       "risk": "0",
       "date": "2026-10-11",
       "rules": "Yes",
@@ -458,6 +458,19 @@
       "good": "gada",
       "improve": "gemini tolol nya minta ampun, sop kacau semua ajg",
       "lesson": "ikuti sop",
+      "freeform": ""
+    },
+    {
+      "id": "mv3r679t3rfura",
+      "createdAt": 1791718900049,
+      "updatedAt": 1791718900049,
+      "date": "2026-10-11",
+      "mood": "Focused",
+      "adherence": "Yes",
+      "mistake": "None identified",
+      "good": "hari ini kita berhasil membuat kemenangan kecil",
+      "improve": "kita harus perbanyak berlatih karena insting juga hal penting untuk menentukan pasar",
+      "lesson": "lihat market lebih sering hanya untuk melihat bagaimana pergerakannya hingga tertanam",
       "freeform": ""
     }
   ],
