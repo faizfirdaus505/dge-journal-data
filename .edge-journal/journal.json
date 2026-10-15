@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-15T01:37:42.728Z",
+  "updatedAt": "2026-10-15T01:44:20.997Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -446,32 +446,6 @@
       "image": ""
     },
     {
-      "id": "mv5csblok6wqkh",
-      "createdAt": 1791815670204,
-      "updatedAt": 1791815670204,
-      "pair": "BTC/USDT",
-      "market": "Futures",
-      "quote": "USDT",
-      "side": "Long",
-      "status": "Open",
-      "setup": "Liquidity Sweep / Support Rejection",
-      "timeframe": "15m",
-      "entry": "82930",
-      "exit": "",
-      "qty": "0.0012",
-      "leverage": "10",
-      "stop": "82366",
-      "target": "83994",
-      "fees": "0",
-      "manualPnl": "",
-      "risk": "0",
-      "date": "2026-10-12",
-      "rules": "Yes",
-      "emotion": "Focused",
-      "notes": "",
-      "image": ""
-    },
-    {
       "id": "mv8u3vaoktixq6",
       "createdAt": 1792026160944,
       "updatedAt": 1792026168453,
@@ -630,14 +604,14 @@
     {
       "id": "mv8vcv7z06xo7g",
       "createdAt": 1792028260367,
-      "updatedAt": 1792028260367,
-      "pair": "BTC/IDR",
-      "market": "Spot",
-      "quote": "IDR",
+      "updatedAt": 1792028302427,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
       "side": "Long",
       "status": "Closed",
       "setup": "breakout long",
-      "timeframe": "1m",
+      "timeframe": "15m",
       "entry": "81792",
       "exit": "81483",
       "qty": "0.0011",
@@ -767,6 +741,7 @@
     "updatedAt": 1791704912838
   },
   "deletedRecords": [
-    "trade:mur1nyt4cdku7v"
+    "trade:mur1nyt4cdku7v",
+    "trade:mv5csblok6wqkh"
   ]
 }
