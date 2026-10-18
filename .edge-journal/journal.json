@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-10-16T03:50:59.352Z",
+  "updatedAt": "2026-10-18T17:33:46.671Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -708,7 +708,7 @@
     {
       "id": "mvafk49v8af1nu",
       "createdAt": 1792122657187,
-      "updatedAt": 1792122657187,
+      "updatedAt": 1792122685463,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -723,7 +723,7 @@
       "stop": "81741",
       "target": "82769",
       "fees": "0",
-      "manualPnl": "-0.43",
+      "manualPnl": "-0.41",
       "risk": "0",
       "date": "2026-10-16",
       "rules": "Yes",
@@ -836,6 +836,19 @@
       "improve": "kita harus perbanyak berlatih karena insting juga hal penting untuk menentukan pasar",
       "lesson": "lihat market lebih sering hanya untuk melihat bagaimana pergerakannya hingga tertanam",
       "freeform": ""
+    },
+    {
+      "id": "mve3txy2ts47vu",
+      "createdAt": 1792344824858,
+      "updatedAt": 1792344824858,
+      "date": "2026-10-18",
+      "mood": "Focused",
+      "adherence": "Yes",
+      "mistake": "None identified",
+      "good": "kita dapat strategi baru",
+      "improve": "pola pikir",
+      "lesson": "gunakan strategi ini",
+      "freeform": "[ ] 1. Setup Tampilan & Indikator di Chart Pluang:\n\nBuka pair BTCUSDT-PERP dengan timeframe 15m.\n\nTambahkan dan sesuaikan indikator berikut di chart:\n\nSupertrend (3 Lapis): Panjang 10 (Faktor 1.0), 11 (Faktor 2.0), dan 12 (Faktor 3.0).\n\nBollinger Bands: Panjang 20 (untuk acuan Batas 2 SL dan garis tengah / basis).\n\nStochastic: Parameter %K: 5, %D: 3, Smooth: 3.\n\n[ ] 2. Pengaturan Margin & Leverage:\n\nPastikan Margin Mode diatur ke Isolated (agar risiko terisolasi per posisi).\n\nAtur Leverage sesuai manajemen risiko pilihanmu (misalnya 10x seperti pada panel order).\n\nCek saldo Margin Tersedia di akunmu.\n\n[ ] 3. Validasi Sinyal (Cek Visual di Chart Pluang):\n\nUntuk Membuka Posisi Beli (Long):\n\nKetiga garis Supertrend kompak menunjukkan warna hijau (tren naik).\n\nHarga tidak terlalu melebar melampaui batas atas BB.\n\nStochastic berada di area oversold (<= 30) atau baru saja terjadi persilangan naik (crossover).\n\nUntuk Membuka Posisi Jual (Strict Short):\n\nKetiga garis Supertrend kompak menunjukkan warna merah (tren turun).\n\nHarga wajib berada di bawah garis tengah Bollinger Bands (SMA).\n\nStochastic berada di area jenuh beli tinggi (>= 75) dan terjadi crossunder.\n\n[ ] 4. Eksekusi Order & Manajemen Risiko di Panel Kanan Pluang:\n\nKlik tombol Beli (Long) atau Jual (Short) sesuai arah sinyal.\n\nPilih tipe eksekusi Market agar langsung masuk di harga real-time.\n\nMasukkan jumlah nominal atau koin BTC yang ingin ditransaksikan.\n\nBuka menu TP/SL (Advanced):\n\nAktifkan dan masukkan Stop Loss (SL) berdasarkan harga numerik pada Batas 2 Bollinger Bands terdekat di chart.\n\nAktifkan Take Profit (TP) dengan menghitung jarak harga ke SL dikalikan rasio 1:1.5.\n\nKlik tombol konfirmasi order untuk membuka posisi."
     }
   ],
   "accountSettings": {
