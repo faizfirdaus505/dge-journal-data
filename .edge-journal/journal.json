@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-04T15:42:38.895Z",
+  "updatedAt": "2026-11-04T15:43:19.921Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -786,7 +786,7 @@
     {
       "id": "mw2a9y4mq69o7o",
       "createdAt": 1793806837510,
-      "updatedAt": 1793806843126,
+      "updatedAt": 1793806993720,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -803,7 +803,7 @@
       "fees": "0",
       "manualPnl": "-0.4",
       "risk": "0",
-      "date": "2026-11-04",
+      "date": "2026-10-20",
       "rules": "Yes",
       "emotion": "Calm",
       "notes": "",
