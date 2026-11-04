@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-04T15:29:28.426Z",
+  "updatedAt": "2026-11-04T15:30:44.464Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -755,6 +755,32 @@
       "rules": "Yes",
       "emotion": "Greed",
       "notes": "lupa tapi asal",
+      "image": ""
+    },
+    {
+      "id": "mw29x6qbd29p8d",
+      "createdAt": 1793806242131,
+      "updatedAt": 1793806242131,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Long",
+      "status": "Closed",
+      "setup": "asal",
+      "timeframe": "1m",
+      "entry": "82205",
+      "exit": "81971",
+      "qty": "",
+      "leverage": "10",
+      "stop": "81971",
+      "target": "82655",
+      "fees": "0",
+      "manualPnl": "-0.1",
+      "risk": "1",
+      "date": "2026-10-16",
+      "rules": "Yes",
+      "emotion": "Greed",
+      "notes": "",
       "image": ""
     }
   ],
