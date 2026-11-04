@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-04T15:52:37.582Z",
+  "updatedAt": "2026-11-04T15:54:15.071Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -864,7 +864,7 @@
     {
       "id": "mw2akih201j6s3",
       "createdAt": 1793807330438,
-      "updatedAt": 1793807480548,
+      "updatedAt": 1793807565423,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -874,7 +874,7 @@
       "timeframe": "1m",
       "entry": "77581",
       "exit": "76809",
-      "qty": "",
+      "qty": "0.005",
       "leverage": "1",
       "stop": "77974",
       "target": "76809",
@@ -890,13 +890,13 @@
     {
       "id": "mw2apbxnbhp49l",
       "createdAt": 1793807555243,
-      "updatedAt": 1793807555243,
-      "pair": "BTC/IDR",
-      "market": "Spot",
-      "quote": "IDR",
+      "updatedAt": 1793807572032,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
       "side": "Long",
       "status": "Closed",
-      "setup": "",
+      "setup": "ema 13 34 rsi 10 atr 25",
       "timeframe": "15m",
       "entry": "78379",
       "exit": "78235",
@@ -1035,9 +1035,9 @@
   ],
   "accountSettings": {
     "idrBalance": 85102,
-    "usdtBalance": 26.42,
+    "usdtBalance": 27.69,
     "usdtIdrRate": 17911.9,
-    "updatedAt": 1792113970428
+    "updatedAt": 1793807652661
   },
   "deletedRecords": [
     "trade:mur1nyt4cdku7v",
