@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-04T15:50:02.073Z",
+  "updatedAt": "2026-11-04T15:51:22.370Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -682,7 +682,7 @@
     {
       "id": "mvaaj09znes0qq",
       "createdAt": 1792114207271,
-      "updatedAt": 1792114236429,
+      "updatedAt": 1793807450972,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -697,7 +697,7 @@
       "stop": "79986",
       "target": "81835",
       "fees": "0",
-      "manualPnl": "-0.6",
+      "manualPnl": "-0.64",
       "risk": "0",
       "date": "2026-10-16",
       "rules": "Yes",
@@ -786,7 +786,7 @@
     {
       "id": "mw2a9y4mq69o7o",
       "createdAt": 1793806837510,
-      "updatedAt": 1793807399842,
+      "updatedAt": 1793807441680,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -801,7 +801,7 @@
       "stop": "82166",
       "target": "80259",
       "fees": "0",
-      "manualPnl": "-0.54",
+      "manualPnl": "-0.58",
       "risk": "0",
       "date": "2026-10-20",
       "rules": "Yes",
@@ -864,11 +864,11 @@
     {
       "id": "mw2akih201j6s3",
       "createdAt": 1793807330438,
-      "updatedAt": 1793807352106,
+      "updatedAt": 1793807480548,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
-      "side": "Long",
+      "side": "Short",
       "status": "Closed",
       "setup": "ema 13 34 rsi 10 atr 25",
       "timeframe": "1m",
@@ -881,7 +881,7 @@
       "fees": "0",
       "manualPnl": "0.16",
       "risk": "0",
-      "date": "2026-11-04",
+      "date": "2026-10-30",
       "rules": "Yes",
       "emotion": "Calm",
       "notes": "",
