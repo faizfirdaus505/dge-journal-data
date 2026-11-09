@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-04T15:58:14.003Z",
+  "updatedAt": "2026-11-09T01:03:12.786Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -1061,9 +1061,9 @@
   ],
   "accountSettings": {
     "idrBalance": 85102,
-    "usdtBalance": 27.69,
+    "usdtBalance": 46.09,
     "usdtIdrRate": 18144.56,
-    "updatedAt": 1793807891640
+    "updatedAt": 1794186189574
   },
   "deletedRecords": [
     "trade:mur1nyt4cdku7v",
