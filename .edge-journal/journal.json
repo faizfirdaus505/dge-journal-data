@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-09T11:39:56.171Z",
+  "updatedAt": "2026-11-09T11:42:16.379Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -988,6 +988,32 @@
       "date": "2026-11-09",
       "rules": "Yes",
       "emotion": "Focused",
+      "notes": "",
+      "image": ""
+    },
+    {
+      "id": "mw96yn83vww65z",
+      "createdAt": 1794224534547,
+      "updatedAt": 1794224534547,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Short",
+      "status": "Closed",
+      "setup": "strategi 4",
+      "timeframe": "15m",
+      "entry": "74413",
+      "exit": "74604",
+      "qty": "0.01",
+      "leverage": "10",
+      "stop": "75012",
+      "target": "73198",
+      "fees": "0",
+      "manualPnl": "-0.75",
+      "risk": "0",
+      "date": "2026-11-09",
+      "rules": "Yes",
+      "emotion": "Greed",
       "notes": "",
       "image": ""
     }
