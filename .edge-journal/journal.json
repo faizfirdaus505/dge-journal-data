@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-09T02:32:36.559Z",
+  "updatedAt": "2026-11-09T02:36:25.663Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -938,6 +938,32 @@
       "emotion": "Calm",
       "notes": "",
       "image": ""
+    },
+    {
+      "id": "mw8ngom1et1v28",
+      "createdAt": 1794191783833,
+      "updatedAt": 1794191783833,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Short",
+      "status": "Closed",
+      "setup": "strategi 4",
+      "timeframe": "15m",
+      "entry": "75927",
+      "exit": "75118",
+      "qty": "0.010",
+      "leverage": "10",
+      "stop": "76611",
+      "target": "75118",
+      "fees": "0",
+      "manualPnl": "2.95",
+      "risk": "0",
+      "date": "2026-11-09",
+      "rules": "Yes",
+      "emotion": "Focused",
+      "notes": "saya masuk walaupun te;at tapi pola yang sama terulang kembali jadi saya memutuskan untuk masuk dengan strategi yang sama",
+      "image": ""
     }
   ],
   "reviews": [
@@ -1061,9 +1087,9 @@
   ],
   "accountSettings": {
     "idrBalance": 85102,
-    "usdtBalance": 37.96,
+    "usdtBalance": 65.65,
     "usdtIdrRate": 18144.56,
-    "updatedAt": 1794191554270
+    "updatedAt": 1794191596561
   },
   "deletedRecords": [
     "trade:mur1nyt4cdku7v",
