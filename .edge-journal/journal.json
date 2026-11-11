@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-11T08:02:38.969Z",
+  "updatedAt": "2026-11-11T08:04:19.568Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -1072,7 +1072,7 @@
     {
       "id": "mwbtzwsym72pdd",
       "createdAt": 1794384157138,
-      "updatedAt": 1794384157138,
+      "updatedAt": 1794384256613,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -1091,8 +1091,8 @@
       "risk": "0",
       "date": "2026-11-11",
       "rules": "Yes",
-      "emotion": "Calm",
-      "notes": "",
+      "emotion": "FOMO",
+      "notes": "fomo masuk karena trade di sinyal sebelumnya masih jalann turun dikit (+) saya malah masuk taunya jadi stop loss",
       "image": ""
     }
   ],
