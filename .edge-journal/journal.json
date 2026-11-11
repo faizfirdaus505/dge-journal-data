@@ -1,7 +1,7 @@
 {
   "app": "Edge Journal",
   "version": 3,
-  "updatedAt": "2026-11-11T08:04:19.568Z",
+  "updatedAt": "2026-11-11T14:36:28.763Z",
   "trades": [
     {
       "id": "mur0txaphmyrn9",
@@ -1046,7 +1046,7 @@
     {
       "id": "mwbjopqfsm7uq0",
       "createdAt": 1794366838599,
-      "updatedAt": 1794366846015,
+      "updatedAt": 1794384268188,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -1072,7 +1072,7 @@
     {
       "id": "mwbtzwsym72pdd",
       "createdAt": 1794384157138,
-      "updatedAt": 1794384256613,
+      "updatedAt": 1794384282677,
       "pair": "BTC/USDT",
       "market": "Futures",
       "quote": "USDT",
@@ -1091,8 +1091,34 @@
       "risk": "0",
       "date": "2026-11-11",
       "rules": "Yes",
-      "emotion": "FOMO",
+      "emotion": "Revenge trading",
       "notes": "fomo masuk karena trade di sinyal sebelumnya masih jalann turun dikit (+) saya malah masuk taunya jadi stop loss",
+      "image": ""
+    },
+    {
+      "id": "mwc82dchmv4o1g",
+      "createdAt": 1794407786513,
+      "updatedAt": 1794407786513,
+      "pair": "BTC/USDT",
+      "market": "Futures",
+      "quote": "USDT",
+      "side": "Long",
+      "status": "Closed",
+      "setup": "strategi 4",
+      "timeframe": "15m",
+      "entry": "73773",
+      "exit": "73388",
+      "qty": "0.01",
+      "leverage": "10",
+      "stop": "73388",
+      "target": "74544",
+      "fees": "0",
+      "manualPnl": "-1",
+      "risk": "0",
+      "date": "2026-11-11",
+      "rules": "Yes",
+      "emotion": "Calm",
+      "notes": "",
       "image": ""
     }
   ],
